@@ -1,5 +1,6 @@
 # headers = {'User-Agent':
 #   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
+import os
 
 
 def scrapeo(url, players, prices, dorsales, paises, edades, posiciones, equipos, playersExcel, valuesExcel, dorsalExcel,
@@ -118,7 +119,7 @@ def scrapeo(url, players, prices, dorsales, paises, edades, posiciones, equipos,
     dfDos = pd.DataFrame(data=dataDos)
 
     print(df)
-    dfDos.to_excel(r'C:\Users\AVG\Desktop\1ºCUATRI\PROYECTOS\equipos.xlsx', index=False, header=True)
+    dfDos.to_excel(r'/Users/seanjust/Desktop/Uni/web_scaping/equipos.xlsx', index=False, header=True)
 
 
 import requests
@@ -206,3 +207,5 @@ for clave in urlTeamsLaliga:
     EdadList = list()
     PosicionList = list()
     EquipoList = list()
+
+
